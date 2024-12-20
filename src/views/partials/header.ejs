@@ -1,0 +1,13 @@
+<header>
+    <h2>Express App</h2>
+    <nav>
+        <a href="/">Home</a>
+        <% if (session && session.username) { %>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/logout">Logout</a>
+        <% } else { %>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        <% } %>
+    </nav>
+</header>
